@@ -12,6 +12,8 @@ function setCardType(type) {
     mastercard: ["#DF6F29", "#C69347"],
     maestro: ["#CC2131", "#3A9BD9"],
     americanexpress: ["#C0C0C0", "#C0C0C0"],
+    discover: ["#00FF29", "#02953D"],
+    jcb: ["#00FFFF", "#015D7A"],
   }
 
   ccBgColor01.setAttribute("fill", colors[type][0])
@@ -75,6 +77,18 @@ const cardNumberPattern = {
 
     {
       mask: "0000 0000 0000 0000",
+      regex: /^65[4-9][0-9]{13}|64[4-9][0-9]{13}|6011[0-9]{12}|(622(?:12[6-9]|1[3-9][0-9]|[2-8][0-9][0-9]|9[01][0-9]|92[0-5])[0-9]{10})$/,
+      cardtype: "discover"
+    },
+
+    {
+      mask: "0000 0000 0000 0000",
+      regex: /^(?:2131|1800|35[0-9]{3})[0-9]{11}$/,
+      cardtype: "jcb"
+    },
+
+    {
+      mask: "0000 0000 0000 0000",
       cardtype: "default",  
     },
   ],
@@ -123,4 +137,3 @@ function updateExpirationNumber(number){
   const ccNumber = document.querySelector(".cc-expiration .value")
   ccNumber.innerText = number.length === 0 ? '02/32' : number
 }
-
