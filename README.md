@@ -1,13 +1,10 @@
-<h1 align="center"> Explorer Lab #01 </h1>
+<h1 align="center"> Rocketpay </h1>
 
 <p align="center">
-DALE Evento exclusivo e gratuito, promovido pela Rocketseat para ensino de tecnologias WEB.
+Fiz esse projeto com a Rocketseat afim de estudar mais sobre Expressões regulares (Regex)
 </p>
 
 <p align="center">
-  <a href="#-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-projeto">Projeto</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#-layout">Layout</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
   <a href="#memo-licença">Licença</a>
 </p>
 
