@@ -110,7 +110,7 @@ document.querySelector("form").addEventListener("submit", (event) => event.preve
 const cardHolder = document.querySelector("#card-holder")
 cardHolder.addEventListener("input", () => {
   const ccHolder = document.querySelector(".cc-holder .value")
-  ccHolder.innerHTML = cardHolder.value.length === 0 ? 'FULANO DE TAL' : cardHolder.value
+  ccHolder.innerHTML = cardHolder.value.length === 0 ? 'NOME COMPLETO' : cardHolder.value
 })
 
 securityCodeMasked.on("accept", () => updateSecurityCode(securityCodeMasked.value))
